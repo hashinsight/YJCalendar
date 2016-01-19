@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E1078F21C4297CC00852B80 /* YJAllDayEventsViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1078F11C4297CC00852B80 /* YJAllDayEventsViewLayout.swift */; };
+		2E1078F41C42980800852B80 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1078F31C42980800852B80 /* test.swift */; };
 		2EBCBAE81C0DDF0C0013214E /* YJCalendar.h in Headers */ = {isa = PBXBuildFile; fileRef = 2EBCBAE71C0DDF0C0013214E /* YJCalendar.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2EBCBAEF1C0DDF0C0013214E /* YJCalendar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EBCBAE41C0DDF0C0013214E /* YJCalendar.framework */; };
 		2EBCBAF41C0DDF0C0013214E /* YJCalendarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBCBAF31C0DDF0C0013214E /* YJCalendarTests.swift */; };
@@ -23,6 +25,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2E1078F11C4297CC00852B80 /* YJAllDayEventsViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YJAllDayEventsViewLayout.swift; sourceTree = "<group>"; };
+		2E1078F31C42980800852B80 /* test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
 		2EBCBAE41C0DDF0C0013214E /* YJCalendar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YJCalendar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EBCBAE71C0DDF0C0013214E /* YJCalendar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJCalendar.h; sourceTree = "<group>"; };
 		2EBCBAE91C0DDF0C0013214E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -72,7 +76,9 @@
 			isa = PBXGroup;
 			children = (
 				2EBCBAE71C0DDF0C0013214E /* YJCalendar.h */,
+				2E1078F31C42980800852B80 /* test.swift */,
 				2EBCBAE91C0DDF0C0013214E /* Info.plist */,
+				2E1078F11C4297CC00852B80 /* YJAllDayEventsViewLayout.swift */,
 			);
 			path = YJCalendar;
 			sourceTree = "<group>";
@@ -196,6 +202,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E1078F21C4297CC00852B80 /* YJAllDayEventsViewLayout.swift in Sources */,
+				2E1078F41C42980800852B80 /* test.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +318,7 @@
 		2EBCBAF91C0DDF0C0013214E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -320,12 +329,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.7pm.YJCalendar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		2EBCBAFA1C0DDF0C0013214E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -378,6 +389,7 @@
 				2EBCBAFA1C0DDF0C0013214E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2EBCBAFB1C0DDF0C0013214E /* Build configuration list for PBXNativeTarget "YJCalendarTests" */ = {
 			isa = XCConfigurationList;
@@ -386,6 +398,7 @@
 				2EBCBAFD1C0DDF0C0013214E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
